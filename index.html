@@ -114,18 +114,25 @@
           </p>
         </span>
       </div>
-      <div class="home-parent4">
-        <div class="home7" id="homeText">home</div>
-        <div class="home7" id="whatIsThe">what is the community?</div>
-        <div class="home7" id="howWeHelp">how we help</div>
-        <div class="home7" id="booksServices">books & services</div>
-        <div class="join-us-wrapper3" id="frameContainer">
-          <div class="join-us14">join us</div>
+      <div class="home-parent2">
+        <div class="home5" id="homeText">home</div>
+        <div class="home5" id="whatIsThe">what is the community?</div>
+        <div class="home5" id="howWeHelp">how we help</div>
+        <div class="home5" id="booksServices">books & services</div>
+        <div class="join-us-wrapper2">
+          <div class="join-us13">join us</div>
         </div>
       </div>
     </div>
 
     <script>
+      var frameContainer = document.getElementById("frameContainer");
+      if (frameContainer) {
+        frameContainer.addEventListener("click", function (e) {
+          window.location.href = "./Component2.html";
+        });
+      }
+
       var homeText = document.getElementById("homeText");
       if (homeText) {
         homeText.addEventListener("click", function (e) {
@@ -151,13 +158,6 @@
       if (booksServices) {
         booksServices.addEventListener("click", function (e) {
           window.location.href = "./component2.html";
-        });
-      }
-
-      var frameContainer = document.getElementById("frameContainer");
-      if (frameContainer) {
-        frameContainer.addEventListener("click", function (e) {
-          window.location.href = "./Component2.html";
         });
       }
     </script>
