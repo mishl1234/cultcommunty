@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -16,10 +16,11 @@
     />
     <style>
       .video-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
       }
     </style>
   </head>
@@ -83,12 +84,6 @@
             </p>
           </span>
         </div>
-      </div>
-      <div class="video-container">
-        <video width="640" height="360" autoplay muted loop playsinline>
-          <source src="https://media.istockphoto.com/id/1030998560/video/red-cat-eyes-blinking-loop.mp4?s=mp4-640x640-is&k=20&c=BUuSNkpedc6Bgjdpn20Zonf73Jqr10uR8oswji7acMU=" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
       </div>
       <div class="frame3">
         <div class="thalzor-nethul-erzalith-container4">
@@ -178,6 +173,14 @@
         <div class="what-is-the" id="whatIsThe">what is the community?</div>
         <div class="what-is-the" id="howWeHelp">how we help</div>
         <div class="what-is-the" id="booksServices">books & services</div>
+      </div>
+
+      <!-- New video container -->
+      <div class="video-container">
+        <video width="640" height="360" autoplay muted loop playsinline>
+          <source src="https://media.istockphoto.com/id/1030998560/video/red-cat-eyes-blinking-loop.mp4?s=mp4-640x640-is&k=20&c=BUuSNkpedc6Bgjdpn20Zonf73Jqr10uR8oswji7acMU=" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
 
